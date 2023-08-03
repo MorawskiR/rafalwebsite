@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="rafal.css">
+        <style>
+            table {
+              border-collapse: collapse;
+              border-spacing: 0;
+              width: 100%;
+              border: 1px solid #ddd;
+            }
+            
+          
+            tr:nth-child(even){background-color: #f2f2f2}
+          
+            caption{
+                margin: auto;
+                font-size: 2rem;
+                color: #143774;
+            }
+            </style>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <header>
+            <div class="container container-flex"> 
+                <div class="site-title">
+                    <h1> CPP important elements  </h1>
+                    <p class="subtitle"> </p>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html" > Home </a></li>
+                        <li><a href="about.html" > About me </a></li>
+                        <li><a href="projects.html" class="current-page"> Project </a></li>                        
+                    </ul>
+                </nav>
+            </div>
+            
+        </header>
+       <!-- <div style="clear: both; height:10px"> </div> -->
+       <div class="container container-flex"> 
+        <main role="main"> 
+            <div style="margin-top:2em;"> 
+             Short, int, long i long long - Types allows us to save variable as integer values. All types have different size depends on system. CPP only assume minumal size for types: </div>
+             <div style="margin-top:2em;"> </div>
+<table >
+   
+    <tr>
+<td>Nazwa </td><td>rozmiar (bajty)</td><td>zakresy</td>
+    </tr>
+    <tr>
+        <td>short </td><td>2   </td><td>[ -2 <sup>15</sup> do  2<sup>15</sup> - 1 ] =  [-32768, 32767] </td>
+    </tr>
+    <tr>
+        <td>int </td><td>4    </td><td>[ -2 <sup>31</sup> do  2<sup>31</sup> - 1 ] =  [-2147483648, 2147483647] </td>
+    </tr>
+    <tr>
+        <td>long </td><td>4    </td><td>[ -2 <sup>31</sup> do  2<sup>31</sup> - 1 ] =  [-2147483648, 2147483647] </td>
+    </tr>
+    <tr>
+        <td>long long </td><td>8    </td><td>[ -2 <sup>63</sup> do  2<sup>63</sup> - 1 ] =  [-2147483648, 2147483647] </td>
+    </tr>
+</table>
+</main>
+
+</div>
+
+<div class="container container-flex"> 
+    <main role="main">  <div style="margin-top:2em;"> </div>
+    Every type has own unsigned variety, which forbid asvevalue as negative. For example short allows to set value from -32 768 to 32 767 but unsigned short allows set values from 0 to 65 535. 
+    <div style="margin-top:2em;"> </div>
+<table class="center">
+
+ <tr>
+<td>Nazwa </td><td>size (bytes)</td><td>zakresy</td>
+ </tr>
+ <tr>
+     <td>unsigned short </td><td>2   </td><td>[ 0  do  2<sup>16</sup> - 1 ] =  [0, 65535] </td>
+ </tr>
+ <tr>
+     <td>unsigned int </td><td>4    </td><td>[ 0  do  2<sup>16</sup> - 1 ] =  [0, 4294967295] </td>
+ </tr>
+ <tr>
+    <td>unsigned  </td><td>4    </td><td>[ 0  do  2<sup>32</sup> - 1 ] =  [0, 4294967295] </td>
+</tr>
+ <tr>
+     <td>unsigned long </td><td>4    </td><td>[ 0  do  2<sup>32</sup> - 1 ] =  [0, 4294967295] </td>
+ </tr>
+ <tr>
+     <td>unsigned long long </td><td>8    </td><td>[ 0  do  2<sup>64</sup> - 1 ] =  [0, 18446744073709551615] </td>
+ </tr>
+</table>
+</div>
+</main>
+<div style="margin-top:2em;"> </div>
+<div class="container container-flex"> 
+    <main role="main"> 
+Char can contains such sign as numbers and letters. With size 1 byte with range -127 to 128. Unsigned char 	1 	0 ÷ 255  <div style="margin-top:2em;"> </div>
+<table>
+    <tr>name <td> </td><td> bytes</td><td> values </td></tr>
+    <tr> bool <td> </td><td> 1 </td><td> true (1)</br>false(0)</td></tr>
+    
+</table>
+</div>
+</main>
+<div class="container container-flex"> 
+    <main role="main"> 
+        <div style="margin-top:2em;"> </div>
+    As in ANSI C also in C++ there are 3 types of Floating point numbers.  <br/>
+    float, double and long double. 
+    <div style="margin-top:2em;"> </div>
+<table> 
+    <tr>
+        <td>float  </td><td>4    </td><td>6 - 7 digits after the decimal point </td>
+    </tr>
+     <tr>
+         <td>double </td><td>8    </td><td>15-16 digits after the decimal point </td>
+     </tr>
+     <tr>
+         <td>long double long </td><td>10, 16 lub 32   </td><td>19-20 digits after the decimal point </td>
+     </tr>
+    </table>
+</div>
+</main>  <div style="margin-top:2em;"> </div>
+<div class="container container-flex"> 
+    <main role="main"> 
+Zadania: 
+<a href="https://github.com/MorawskiR/C-plus-plus/blob/master/prata/3.3"> 3.3   </a>&nbsp;&nbsp;&nbsp;
+<a href="https://github.com/MorawskiR/C-plus-plus/blob/master/prata/3.4"> 3.4 </a>
+</div> </main>
+        <footer>
+            <p><strong> Close strong</strong> </p>
+            <p> Stay home </p>
+        </footer>
+    </body>
+</html>

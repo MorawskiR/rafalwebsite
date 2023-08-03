@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="rafal.css">
+        <style>
+            table {
+              border-collapse: collapse;
+              border-spacing: 0;
+              width: 100%;
+              border: 1px solid #ddd;
+            }
+            
+          
+            tr:nth-child(even){background-color: #f2f2f2}
+          
+            caption{
+                margin: auto;
+                font-size: 2rem;
+                color: #143774;
+            }
+            </style>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <header>
+            <div class="container container-flex"> 
+                <div class="site-title">
+                    <h1> CPP important elements  </h1>
+                    <p class="subtitle"> </p>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html" > Home </a></li>
+                        <li><a href="about.html" > About me </a></li>
+                        <li><a href="projects.html" class="current-page"> Project </a></li>                        
+                    </ul>
+                </nav>
+            </div>
+            
+        </header>
+       <!-- <div style="clear: both; height:10px"> </div> -->
+       <div class="container container-flex"> 
+        <main role="main"> 
+           
+
+          <ol> 
+            <li> Tablica <br> np. int yam[3]; 
+            <br>np. int yam[3] = {1,2,3};
+            </li>
+        
+            <li> Struktury np. <br/>
+                struct inflatable<br/>
+            {<br/>
+                &emsp; char name[20];<br/>
+                &emsp; float volume;<br/>
+                &emsp; double price;<br/>
+            };
+            </li>
+            <li> Unia - podobna do struktury, jeden typ danych moze byc zapisany raz</li>
+            union one4all<br/>
+    {<br/>
+        &emsp;   int k = 3;<br/>
+        &emsp;    double c;<br/>
+    };  
+  
+       
+     <li> enum days </li>
+            {<br/>
+                &emsp;  mon = 0, <br/>
+                &emsp; tue = 1,<br/>
+                &emsp;   wed = 2,<br/>
+                &emsp;    random<br/>
+            };<br/>
+            &emsp; int main()<br/>
+            {<br/>
+                &emsp;    days day;<br/>
+                &emsp;     day = mon;<br/>
+            }
+    </li>
+            </ol>
+</div> </main>
+        <footer>
+            <p><strong> Close strong</strong> </p>
+            <p> Stay home </p>
+        </footer>
+    </body>
+</html>

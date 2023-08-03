@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="rafal.css">
+        <style>
+            table {
+              border-collapse: collapse;
+              border-spacing: 0;
+              width: 100%;
+              border: 1px solid #ddd;
+            }
+            
+          
+            tr:nth-child(even){background-color: #f2f2f2}
+          
+            caption{
+                margin: auto;
+                font-size: 2rem;
+                color: #143774;
+            }
+            </style>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <header>
+            <div class="container container-flex"> 
+                <div class="site-title">
+                    <h1> CPP important elements  </h1>
+                    <p class="subtitle"> </p>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html" > Home </a></li>
+                        <li><a href="about.html" > About me </a></li>
+                        <li><a href="projects.html" class="current-page"> Project </a></li>                        
+                    </ul>
+                </nav>
+            </div>
+            
+        </header>
+       <!-- <div style="clear: both; height:10px"> </div> -->
+       <div class="container container-flex"> 
+        <main role="main"> 
+           <ol>
+        <li> Zapis do pliku : <br/><br/></li>
+
+            ofstream plik; <br/>
+            plik.open(&#x22;fish.txt&#x22;);<br/>
+            char charr[50];<br/>
+            cin.getline(charr, 50);<br/>
+            string str;<br/>
+            int a;<br/>
+            double b;<br/>
+            getline(cin, str);<br/>
+            cin &#x3E;&#x3E; a &#x3E;&#x3E; b;<br/>
+            plik.setf(ios_base::showpoint);<br/>
+            plik &#x3C;&#x3C; &#x22;char tab[50] : &#x22; &#x3C;&#x3C; charr &#x3C;&#x3C; endl;<br/>
+            plik &#x3C;&#x3C; &#x22;zmienna string : &#x22; &#x3C;&#x3C; str &#x3C;&#x3C; endl;<br/>
+            plik &#x3C;&#x3C; &#x22;int : &#x22; &#x3C;&#x3C; a &#x3C;&#x3C; endl;<br/>
+            plik &#x3C;&#x3C; &#x22;double : &#x22; &#x3C;&#x3C;b &#x3C;&#x3C; endl;<br/>
+            plik.close(); <br/><br/>
+        <li> Odczyt z pliku <br/><br/></li>
+        ifstream inFile; // obiekt ifstream do odczytu<br/>
+    inFile.open("fish.txt"); <br/>
+    if (!inFile.is_open())<br/>
+    {<br/>
+        &emsp;   cout << "otwarcie poliku nie powiodlo sie" << endl;<br/>
+        &emsp;   exit(EXIT_FAILURE);<br/>
+    }<br/>
+    string value;<br/>
+    inFile >> value;<br/>
+    while (inFile.good())<br/>
+    {<br/>
+        &emsp;    cout << value << endl;<br/>
+        &emsp;     inFile >> value;<br/>
+    }<br/>
+    inFile.close();<br/>
+        </ol>
+</div> </main>
+        <footer>
+            <p><strong> Close strong</strong> </p>
+            <p> Stay home </p>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="rafal.css">
+        <style>
+            table {
+              border-collapse: collapse;
+              border-spacing: 0;
+              width: 100%;
+              border: 1px solid #ddd;
+            }
+            
+          
+            tr:nth-child(even){background-color: #f2f2f2}
+          
+            caption{
+                margin: auto;
+                font-size: 2rem;
+                color: #143774;
+            }
+            </style>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <header>
+            <div class="container container-flex"> 
+                <div class="site-title">
+                    <h1> CPP important elements  </h1>
+                    <p class="subtitle"> </p>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html" > Home </a></li>
+                        <li><a href="about.html" > About me </a></li>
+                        <li><a href="projects.html" class="current-page"> Project </a></li>                        
+                    </ul>
+                </nav>
+            </div>
+            
+        </header>
+       <!-- <div style="clear: both; height:10px"> </div> -->
+       <div class="container container-flex"> 
+        <main role="main"> 
+       table as a function argument : <br/>
+       
+#include <iostream>
+    #include <string>
+    
+    using namespace std; <br/>
+    const int ArSize = 5; <br/>
+    int sum_array(int tab[], int k); <br/>
+    int main() <br/>
+    { <br/>
+        &emsp;    int table[ArSize] = { 1,2,3,4,5 }; <br/>
+        &emsp;     cout<< sum_array(table, ArSize); <br/>
+    } <br/>
+    int sum_array(int tab[], int k) <br/>
+    { <br/>
+        &emsp;   int sum = 0; <br/>
+        &emsp;   for (int i = 0; i < k; i++) <br/>
+        &emsp;  { <br/>
+            &emsp;       &emsp;   sum = sum + tab[i]; <br/>
+            &emsp;   } <br/>
+            &emsp;  return sum; <br/>
+    } <br/>
+    <br/><br/>
+<h3> Table in pointer </h3>
+
+#include <iostream> <br/>
+    #include <string> <br/>
+    #include <vector>; <br/>
+    using namespace std; <br/>
+    const int rozmiar = 6; <br/>
+    int sum(const int* begin, const int* end); <br/>
+    int main() <br/>
+    { <br/>
+        &emsp; int cookies[6] = { 1,2,3,4,5,6 }; <br/>
+        &emsp;   cout << sum(cookies, cookies + rozmiar); <br/>
+    
+    
+    } <br/>
+    int sum(const int* begin, const int* end) <br/>
+     { <br/>
+        &emsp; const int* pt; <br/>
+        &emsp;  int total = 0; <br/>
+        &emsp;   for (pt = begin; pt != end ;  pt++) <br/>
+        { <br/>
+            &emsp; total = total + *pt; <br/>
+        } <br/>
+        &emsp; return total; <br/>
+    } <br/>
+</div> </main>
+        <footer>
+            <p><strong> Close strong</strong> </p>
+            <p> Stay home </p>
+        </footer>
+    </body>
+</html>

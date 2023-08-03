@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="rafal.css">
+        <style>
+            table {
+              border-collapse: collapse;
+              border-spacing: 0;
+              width: 100%;
+              border: 1px solid #ddd;
+            }
+            
+          
+            tr:nth-child(even){background-color: #f2f2f2}
+          
+            caption{
+                margin: auto;
+                font-size: 2rem;
+                color: #143774;
+            }
+            </style>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <header>
+            <div class="container container-flex"> 
+                <div class="site-title">
+                    <h1> CPP important elements  </h1>
+                    <p class="subtitle"> </p>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html" > Home </a></li>
+                        <li><a href="about.html" > About me </a></li>
+                        <li><a href="projects.html" class="current-page"> Project </a></li>                        
+                    </ul>
+                </nav>
+            </div>
+            
+        </header>
+       <!-- <div style="clear: both; height:10px"> </div> -->
+       <div class="container container-flex"> 
+        <main role="main"> 
+           
+    <ol>  
+
+        <li>STD<br/> std::cin <br/>
+            std::string ch; <br/>
+            std::cin >> ch; <br/> <br/> 
+        </li> 
+        
+        <li>GETLINE <br/>string str;<br/>
+            char tab[3];<br/>
+            int z[3];<br/>
+        
+            cin.getline(tab, 3); // tylko char <br/>
+            getline(cin, str); // tylko string<br/>
+            cout << tab;<br/>
+            cout << str;<br/><br/</li>
+        <li>
+             a) &nbsp;   cin.get(char) - wczytuje kazdy kolejny znak takze kilka pod rzad jezeli nie jest okreslony przez warunek<br/><br/>
+                char znak;<br/>
+	cin.get(znak);<br/>
+	while (znak != '#')<br/>
+	{<br/>
+		&nbsp; &nbsp; cout << znak;<br/>
+		&nbsp; &nbsp; cin.get(znak);<br/>
+	}<br/><br/>
+b) &nbsp; 
+char tab[3]; <br/>
+cin.get(tab, 3).get(); // wczytuje 2 znaki, ostatni index to /NULL<br/>
+cout << tab;<br/><br/>
+        </li>
+<li>cin.fail() - wczytuje do napotkania entera <br/><br/>
+    char ch;<br/>
+    int count;<br/>
+    cin.get(ch);<br/>
+    while (cin.fail() == false)<br/>
+    {<br/>
+        &nbsp; &nbsp;   cout << ch;<br/>
+        &nbsp; &nbsp;  cin.get(ch);<br/>
+    }<br/>
+</li>
+<li> EOL - przekazuje sugnal znaku
+    int ch;
+    ch = cin.get();
+    while (ch != EOF)
+    {
+        cout << ch;
+        ch = cin.get();
+    }
+</li>
+    </ol>
+
+</div> </main>
+        <footer>
+            <p><strong> Close strong</strong> </p>
+            <p> Stay home </p>
+        </footer>
+    </body>
+</html>
